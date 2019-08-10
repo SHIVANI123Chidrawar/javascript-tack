@@ -1,0 +1,26 @@
+var correctGuess = false;
+var randomNumber = Math.floor(Math.random()*6)+ 1;
+var guess = parseInt(prompt("Please Enter any number from 1 to 6"));
+		if(randomNumber === guess){
+			correctGuess = true;
+		}
+		else if(guess < randomNumber){
+			guess = parseInt(prompt("Enter bigger number "));
+			if(randomNumber === guess){
+				correctGuess = true;
+			}
+		}
+		else if(guess > randomNumber){
+			guess = parseInt(prompt("Enter small number "));
+			if(randomNumber === guess){
+				correctGuess = true;
+			}
+		}
+		
+		if(correctGuess){
+			alert(" you got it right");
+		}
+		
+		else {
+			alert("you got it wrong");
+		}

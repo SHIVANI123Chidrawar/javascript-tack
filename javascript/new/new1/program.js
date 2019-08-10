@@ -1,0 +1,10 @@
+var questionsleft = 3 ;
+var noun =prompt("Plz enter the noun");
+ questionsleft  -= 1 ;
+alert ( "questionsleft is:"+" " +questionsleft);
+var verb =prompt("plz enter the varb");
+ questionsleft  -=1 ;
+alert("questionsleft"+" " +questionsleft);
+var adverb =prompt("plz enter the advarb");
+alert ("tq so much visiting my site");
+document.write("<h1>"+noun+ " " + "is" + " " + verb + " " + "on"+ " " +adverb+"</h1>");
